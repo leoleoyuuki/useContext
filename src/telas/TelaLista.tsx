@@ -11,9 +11,12 @@ function getUsuarios({ item }) {
         <ListItem.Subtitle>{item.email}</ListItem.Subtitle>
       </ListItem.Content>
 
-      <ListItem.Content right>
+      <ListItem.Content right style={{flexDirection:'row'}}>
         <Button 
             icon={<Icon name="delete" />} 
+            type="clear" />
+        <Button 
+            icon={<Icon name="edit" />} 
             type="clear" />
       </ListItem.Content>
     </ListItem>
